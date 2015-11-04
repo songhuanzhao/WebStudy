@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script type="text/javascript" src="Scripts/jquery.js"></script>
+    <script type="text/javascript">
+        //找到div1的兄弟姐妹，添加一个样式，不包括自身
+        function func_siblings() {
+            $("#div1").siblings().addClass("big");
+        }
+        //有选择性的找出div1的兄弟姐妹，添加一个样式，不包括自身
+        function func_siblings2() {
+            $("#div1").siblings("div").addClass("big");
+        }
+
+        function func_siblings3() {
+            $("#div1").siblings().removeClass("big");
+        }
+    </script>
+    <style type="text/css">
+        .big {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <em>siblings()学习</em>
+        <div id="div1">我</div>
+        <div>兄弟</div>
+        <div>姐妹</div>
+        <button onclick="javascript:func_siblings()">siblings测试(包括自己)</button>
+        <button onclick="javascript:func_siblings2()">siblings测试(不包括自己)</button>
+        <button onclick="javascript:func_siblings3()">还原</button>
+    </div>
+    <br />
+</body>
+</html>

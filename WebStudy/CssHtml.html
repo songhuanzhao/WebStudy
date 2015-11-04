@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>css学习</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        strong {
+            color: red;
+        }
+
+        h2 {
+            color: red;
+        }
+
+            h2 strong {
+                color: blue;
+            }
+
+        #Red span {
+            color: red;
+        }
+
+        #Red div {
+            background-color: black;
+        }
+
+        div#Red {
+            background-color: green;
+        }
+
+        .class1 {
+            background-color:red;
+        }
+            .class1 span {
+               background-color:yellow;
+            }
+        span.class1 {
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <em>派生选择器</em>
+        <p>The strongly emphasized word in this paragraph is<strong>red</strong>.</p>
+        <h2>This subhead is also red.</h2>
+        <h2>The strongly emphasized word in this subhead is<strong>blue</strong>.</h2>
+        <br />
+        <em>id选择器</em>
+        <div id="Red">
+            <span>红色</span>
+            <span style="color:blue">蓝色</span>
+            <p>段落</p>
+            <div>123</div>
+        </div>
+        <em>类选择器</em>
+        <div class="class1">
+            <span>黄</span>
+            <span class="class1">123</span>
+            <p>红</p>
+        </div>
+        <span>123</span>
+    </div>
+</body>
+</html>
